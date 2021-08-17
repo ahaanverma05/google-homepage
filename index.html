@@ -2,56 +2,9 @@
 <html>
     <head>
         <title>
-            Weight Calculator
+            loading
         </title>
-        <style>
-            body {
-                font-family: sans-serif;
-                background: rgb(51, 51, 51);
-                color: white;
-            }
-        </style>
     </head>
-    <body>
- <fieldset>
-     <legend><bold><span style="color: white;">Your Information:</span></bold></legend>
-        <input type="text" id="name" placeholder="Name:">
-        <br>
-        <br>
-        <form>
-            <input type="number" id="height" placeholder="Height: (Meters)">
-        <br>
-        <br>
-        <input type="number" id="weight" placeholder="Weight: (Kilograms)">
- </fieldset>
- <br>
- <p id="answer" style="font-family: sans-serif;"></p>
-        <button onclick="ana()" id="analy" style="background: black;"><span style="color: white;">Analyze</span></button>
-        <br>
+    <body onload="window.location.replace(`https://ahaanverma05.github.io/google-homepage/dark.htm`)">
     </body>
-    <script>
-
-        function ana() {
-            var name = document.getElementById("name").value;
-            var height =  document.getElementById("height").value;
-            var weight = document.getElementById("weight").value;
-            var bmi = weight/(height*height);
-
-            if (bmi < 18.5) {
-                var thinw = document.getElementById("answer").innerHTML="Hi! " + name + ", It seems as if you are under weight! Your calculated BMI Is " + bmi.toFixed(1) + ", " + name + ""
-            }
-        
-            if (bmi >= 18.5 && bmi < 24.9) {
-                var normalw = document.getElementById("answer").innerHTML="Hi! " + name + ", It seems as if you are at perfect weight! Your calculated BMI Is " + bmi.toFixed(1) + ", " + name + ""
-            }
-        
-            if (bmi >= 24.9 && bmi < 29.9) {
-                var fatw = document.getElementById("answer").innerHTML="Hi! " + name + ", It seems as if you are overweight! Your calculated BMI Is " + bmi.toFixed(1) + ", " + name + ""
-            }
-        
-            if (bmi >= 30.0) {
-                var obesew = document.getElementById("answer").innerHTML="Hi! " + name + ", It seems as if you are obese! Your calculated BMI Is " + bmi.toFixed(1) + ", " + name + ""
-            }
-        }
-        </script>
 </html>
